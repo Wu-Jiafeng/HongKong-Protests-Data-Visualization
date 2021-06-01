@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>香港"暴乱"可视化</title>
+    <meta charset="utf-8">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="lib/d3.v5.js"></script>
+</head>
+
+<body>
+    <div class="title">
+        从社交媒体角度看香港"暴乱"
+    </div>
+	<div id="main">
+	<div class="chart"></div>
+	<div id="sidebar">
+		<input type="checkbox" id="togglelegend"> Legend<br/>
+		<div id="legend" style="visibility: hidden;"></div>
+	</div>
+	</div>
+    <div id="text-circle">
+        <div id="circle"></div>
+		<div id="sidebar4circle">
+			<input type="checkbox" id="togglelegend4circle"> Legend<br/>
+			<div id="legend4circle" style="visibility: hidden;"></div>
+		</div>
+        <div class="newsblock" id="chart3" style="background-color: rgb(255, 255, 255); margin: 30px auto; padding: 5px 30px; border-radius: 15px;overflow-y:scroll">
+    </div>
+	</div>
+    
+
+    <script src="lib/d3.js"></script>
+    <script src="lib/D3.layout.cloud.js"></script>
+    <script src="js/themeriver.js"></script>
+    <script src="js/wordCloud.js"></script>
+    <script src="js/circle.js"></script>
+    <script src="js/timeline.js"></script>
+    <script>
+        drawConcernCircle();
+    </script>
+</body>
+
+</html>
